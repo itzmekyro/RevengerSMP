@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#080b12">
+<meta name="description" content="Join REVENGERS SMP, a Minecraft Java and Pocket Edition server. Explore ranks, connect, and join the battle.">
+<title>REVENGERS SMP | Official Minecraft Server</title>
+<style>
+:root{--bg:#080b12;--panel:#111827;--blue:#49c8ff;--cyan:#48e5ff;--red:#ff4658;--text:#f6f8ff;--muted:#aab6ca}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Arial,sans-serif;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;background:radial-gradient(ellipse at 12% 8%,#154a7a55,transparent 38%),radial-gradient(ellipse at 90% 35%,#6a142c35,transparent 34%);z-index:-1}
+a{color:inherit;text-decoration:none}.wrap{width:min(1120px,92%);margin:auto}
+nav{display:flex;align-items:center;justify-content:space-between;padding:22px 0;gap:18px}.brand{font-weight:950;letter-spacing:1.8px;font-size:1.15rem}.brand span{color:var(--blue)}.navlinks{display:flex;gap:22px;color:var(--muted);font-size:.92rem}.navlinks a:hover{color:white}
+.hero{min-height:590px;display:grid;place-items:center;text-align:center;padding:60px 0 78px;position:relative}
+.tag{display:inline-flex;border:1px solid #49c8ff66;background:#49c8ff12;color:#8de1ff;border-radius:999px;padding:8px 14px;font-size:.78rem;font-weight:800;letter-spacing:1.7px}
+h1{font-size:clamp(2.7rem,8vw,6.4rem);line-height:.95;letter-spacing:-3px;margin:24px 0 18px;font-weight:1000;text-shadow:0 0 34px #269dff33}
+h1 span{display:block;background:linear-gradient(90deg,#fff,#65d7ff 45%,#ff697b);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{max-width:650px;margin:0 auto;color:var(--muted);font-size:1.08rem;line-height:1.75}
+.actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:30px}.btn{border:0;border-radius:10px;padding:14px 21px;font-weight:900;cursor:pointer;transition:.2s;display:inline-flex;align-items:center;justify-content:center;gap:8px}.btn:hover{transform:translateY(-2px)}.primary{background:linear-gradient(100deg,#42baff,#77e5ff);color:#04111b;box-shadow:0 8px 28px #35bfff30}.secondary{border:1px solid #344157;background:#111827;color:white}
+.server-pill{margin:28px auto 0;display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap;color:#c8d5e8;font-size:.88rem}.dot{width:8px;height:8px;background:#5df2a7;border-radius:50%;box-shadow:0 0 12px #5df2a7}
+section{padding:60px 0}.section-head{text-align:center;margin-bottom:30px}.eyebrow{color:var(--blue);font-weight:900;font-size:.75rem;letter-spacing:2.5px;text-transform:uppercase}.section-head h2{font-size:clamp(2rem,5vw,3rem);margin:10px 0}.section-head p{color:var(--muted);margin:0}
+.connect-grid,.rank-grid,.feature-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.card{background:linear-gradient(145deg,#141c2b,#0e1420);border:1px solid #293449;border-radius:18px;padding:25px;box-shadow:0 14px 40px #0002}
+.card h3{margin:0 0 8px;font-size:1.25rem}.muted{color:var(--muted);line-height:1.6}.ipbox{display:flex;gap:8px;margin-top:18px;align-items:center}.ip{flex:1;min-width:0;background:#080d16;border:1px solid #2a394e;border-radius:9px;padding:13px 12px;font-family:ui-monospace,SFMono-Regular,monospace;font-size:.9rem;overflow-wrap:anywhere}.copy{background:#25364c;color:white;border:1px solid #3c526e;border-radius:9px;padding:12px 14px;font-weight:800;cursor:pointer}.copy:hover{background:#34506f}.tiny{font-size:.78rem;color:#8d9bb0;margin-top:12px}
+.rank-grid{grid-template-columns:repeat(4,minmax(0,1fr))}.rank{position:relative;overflow:hidden;text-align:center;padding:25px 18px}.rank:before{content:"";position:absolute;inset:0 0 auto;height:3px;background:var(--rank)}.rank .gem{font-size:2rem;margin:4px 0 14px;color:var(--rank);text-shadow:0 0 22px color-mix(in srgb,var(--rank),transparent 50%)}.rank h3{color:var(--rank);font-size:1.2rem;letter-spacing:.5px}.price{font-size:2rem;font-weight:950;margin:12px 0 18px}.rank .btn{width:100%;background:color-mix(in srgb,var(--rank),#101622 85%);border:1px solid color-mix(in srgb,var(--rank),transparent 45%);color:var(--rank);padding:11px}
+.feature-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.feature .symbol{font-size:1.7rem}.feature h3{margin:12px 0 6px}
+.cta{text-align:center;background:linear-gradient(120deg,#10223b,#151324);border:1px solid #2a4666;border-radius:22px;padding:40px 22px}.cta h2{font-size:clamp(1.8rem,4vw,2.8rem);margin:0 0 10px}.cta p{color:var(--muted);margin:0}
+footer{padding:30px 0 38px;color:#7e8ca1;font-size:.85rem;border-top:1px solid #1c2737;margin-top:55px}.foot{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.notice{font-size:.8rem;color:#91a0b7;margin-top:14px}
+@media(max-width:760px){.navlinks{gap:12px;font-size:.8rem}.rank-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.feature-grid{grid-template-columns:1fr}.hero{min-height:520px}h1{letter-spacing:-1.5px}.connect-grid{grid-template-columns:1fr}}
+@media(max-width:420px){.navlinks a:nth-child(2){display:none}.ipbox{align-items:stretch}.copy{padding:10px}.rank{padding:22px 12px}}
+</style>
+</head>
+<body>
+<header class="wrap">
+<nav>
+  <a class="brand" href="#"><span>REVENGERS</span> SMP</a>
+  <div class="navlinks"><a href="#connect">Join Server</a><a href="#ranks">Ranks</a><a href="#features">Features</a></div>
+</nav>
+</header>
+<main>
+<section class="hero wrap">
+  <div>
+    <div class="tag">⚔ MINECRAFT SURVIVAL • LIFESTEAL</div>
+    <h1>YOUR STORY.<span>YOUR REVENGE.</span></h1>
+    <p>Build your legacy, team up with friends, and prove your power. The battle for the top starts on <strong>REVENGERS SMP</strong>.</p>
+    <div class="actions">
+      <a class="btn primary" href="#connect">JOIN THE SERVER ↗</a>
+      <a class="btn secondary" href="https://discord.gg/yrvBm3ZuEn" target="_blank" rel="noopener noreferrer">JOIN DISCORD ↗</a>
+      <a class="btn secondary" href="#ranks">EXPLORE RANKS</a>
+    </div>
+    <div class="server-pill"><span class="dot"></span> Java + Pocket Edition support <span>•</span> Come make your mark</div>
+  </div>
+</section>
+<section id="connect" class="wrap">
+  <div class="section-head"><div class="eyebrow">CONNECT NOW</div><h2>Choose your edition</h2><p>Copy the address for your Minecraft edition and join the fight.</p></div>
+  <div class="connect-grid">
+    <article class="card">
+      <h3>☕ Java Edition</h3><p class="muted">For Minecraft Java players on PC.</p>
+      <div class="ipbox"><div class="ip" id="javaIP">paid-in1.godcloud.site:25579</div><button class="copy" onclick="copyText('javaIP',this)">COPY</button></div>
+      <div class="tiny">Server Address • Port included</div>
+    </article>
+    <article class="card">
+      <h3>📱 Pocket Edition</h3><p class="muted">For Minecraft Bedrock / Pocket Edition players.</p>
+      <div class="ipbox"><div class="ip" id="bedrockIP">paid-in1.godcloud.site</div><button class="copy" onclick="copyText('bedrockIP',this)">COPY</button></div>
+      <div class="tiny">Port: <strong>25579</strong></div>
+    </article>
+  </div>
+  <p class="notice">If Bedrock cannot connect, check with the server host that Bedrock support is enabled and that port 25579 is configured for Bedrock.</p>
+</section>
+<section id="ranks" class="wrap">
+  <div class="section-head"><div class="eyebrow">LEVEL UP</div><h2>Choose your rank</h2><p>Stand out on REVENGERS SMP with a premium rank.</p></div>
+  <div class="rank-grid">
+    <article class="card rank" style="--rank:#48e5ff"><div class="gem">◆</div><h3>REVENGER</h3><p class="muted">Rise above the rest.</p><div class="price">₹599</div><button class="btn" onclick="rankMessage('REVENGER',599)">GET RANK</button></article>
+    <article class="card rank" style="--rank:#a6ff43"><div class="gem">✦</div><h3>OVERLORD</h3><p class="muted">Rule your territory.</p><div class="price">₹249</div><button class="btn" onclick="rankMessage('OVERLORD',249)">GET RANK</button></article>
+    <article class="card rank" style="--rank:#a96bff"><div class="gem">⬟</div><h3>MVP</h3><p class="muted">Make your name known.</p><div class="price">₹99</div><button class="btn" onclick="rankMessage('MVP',99)">GET RANK</button></article>
+    <article class="card rank" style="--rank:#ff9b35"><div class="gem">★</div><h3>ELITE</h3><p class="muted">Your first step to glory.</p><div class="price">₹59</div><button class="btn" onclick="rankMessage('ELITE',59)">GET RANK</button></article>
+  </div>
+  <p class="notice" style="text-align:center">Rank purchase buttons currently show instructions. Add your official payment / ticket link before accepting payments.</p>
+</section>
+<section id="features" class="wrap">
+  <div class="section-head"><div class="eyebrow">WHY REVENGERS?</div><h2>Enter the action</h2><p>A community made for players who want more than ordinary survival.</p></div>
+  <div class="feature-grid">
+    <article class="card feature"><div class="symbol">⚔️</div><h3>Competitive Gameplay</h3><p class="muted">Fight smart, build your strategy, and make every battle count.</p></article>
+    <article class="card feature"><div class="symbol">🏆</div><h3>Ranks & Progress</h3><p class="muted">Show off your status with the rank that matches your playstyle.</p></article>
+    <article class="card feature"><div class="symbol">🌍</div><h3>Java + Pocket</h3><p class="muted">Choose your edition and check the connection details above.</p></article>
+  </div>
+</section>
+<section class="wrap"><div class="cta"><h2>Ready to make history?</h2><p>Copy the server IP, launch Minecraft, and join REVENGERS SMP.</p><div class="actions"><a href="#connect" class="btn primary">GET SERVER IP</a><a href="https://discord.gg/yrvBm3ZuEn" target="_blank" rel="noopener noreferrer" class="btn secondary">JOIN OUR DISCORD ↗</a><button class="btn secondary" onclick="copyText('javaIP',this)">COPY JAVA IP</button></div></div></section>
+</main>
+<footer class="wrap"><div class="foot"><span>© <span id="year"></span> REVENGERS SMP</span><span>Unofficial community server website • Not affiliated with Mojang or Microsoft.</span></div></footer>
+<script>
+document.getElementById('year').textContent=new Date().getFullYear();
+async function copyText(id,button){const value=document.getElementById(id).textContent.trim();try{await navigator.clipboard.writeText(value);const old=button.textContent;button.textContent='COPIED ✓';setTimeout(()=>button.textContent=old,1500)}catch(e){window.prompt('Copy this server address:',value)}}
+function rankMessage(rank,price){alert('To buy the '+rank+' rank (₹'+price+'), contact the REVENGERS SMP owner and confirm the payment method. Add your official store or support link to this button when ready.');}
+</script>
+</body>
+</html>
